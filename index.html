@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rule34 Image Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="controls">
+    <div class="field">
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" placeholder="e.g. samus aran"/>
+    </div>
+    <div class="field">
+        <label for="limit">Limit:</label>
+        <input type="range" id="limit" min="1" max="100" value="10" step="1" oninput="document.getElementById('limit-value').textContent = this.value" />
+        <span id="limit-value">10</span>
+    </div>
+    <button id="searchBtn">Search</button>
+</div>
+
+<div id="results">No results yet.</div>
+
+<script src="script.js"></script>
+</body>
+</html>
